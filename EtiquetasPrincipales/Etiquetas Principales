@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="es">
+    <meta charset="UTF-8">
+    <meta name="author" content="Rafa Bernat">
+    <title>Rafa Bernat</title>
+</head>
+
+<body>
+    <h1>Rafa Bernat</h1>
+    
+    <h2>Nombre</h2>
+        <p>Rafa Bernat Carbonell</p>
+
+    <h2>Presentacion</h2>
+
+        <p>Soy Rafa,tengo 18 años casi 19 y estudio 2n de SMX en el instituto de Játiva "IES Lluis Simarro", soy de Manuel<br> y me
+       gusta la informatica,la historia y las peliculas,sobre todo el universo de Star Wars.
+        </p>
+    
+    <h2>Pasatiempos</h2>
+        <ul>
+            <li>Airsoft</li>
+            <li>Ver Star Wars</li>
+            <li>Historia</li>
+        </ul>
+
+    <h2>TOP peliculas de Star Wars</h2>
+        <p></p>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
