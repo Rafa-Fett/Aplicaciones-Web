@@ -16,7 +16,7 @@
 
     <h2>Presentacion</h2>
 
-        <p>Soy Rafa,tengo 18 años casi 19 y estudio 2n de SMX en el instituto de Játiva "IES Lluis Simarro", soy de Manuel<br> y me
+        <p><strong>Soy Rafa,tengo 18 años</strong> casi 19 y estudio 2n de SMX en el instituto de Játiva <em>IES Lluis Simarro</em>, soy de Manuel<br> y me
        gusta la informatica,la historia y las peliculas,sobre todo el universo de Star Wars.
         </p>
     
@@ -28,8 +28,11 @@
         </ul>
 
     <h2>TOP peliculas de Star Wars</h2>
-        <p></p>
-
+        <ol>
+            <li>El Imperio Contrataca</li>
+            <li>La Venganza de los Sith</li>
+            <li>El Retorno del Jedi</li>
+        </ol>
 </body>
 
 
