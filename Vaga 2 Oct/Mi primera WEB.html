@@ -1,26 +1,124 @@
+
+
+
+
+
 <!DOCTYPE html>
-<html lang="eS">
+
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="RafaBernat">
+    <meta name="author" content="Rafa Bernat">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera WEB HTML</title>
-
-
 </head>
 
 <body>
+    <!-- Encabezado principal -->
     <header>
-      <H1>MI SITIO WEB</H1>
-        <img src="./imagenes/logo.jpeg" width="200" height="200">
+        <img src="imagenes/logo.jpeg" alt="Logo Fett" width="80">
+        <h1>Mi Sitio Web</h1>
+    </header>
 
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#presentacion">Presentación</a></li>
+            <li><a href="#articulo">Artículo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-        
+    <!-- Contenido principal -->
+    <main>
 
-    </header>    
+        <!-- Sección de presentación -->
+        <section id="presentacion">
+            <h2>Bienvenidos</h2>
+            <p>Esta es mi primera página web hecha con HTML5.</p>
+        </section>
 
+        <!-- Sección con un artículo -->
+        <section id="articulo">
+            <article>
+                <h2>Artículo destacado</h2>
+                <p>El lenguaje HTML5 nos permite estructurar páginas de forma clara, ordenada y semántica.</p>
+                <blockquote>“La web es para todos.” — Tim Berners-Lee</blockquote>
+            </article>
+        </section>
 
+        <!-- Listas de ejemplo -->
+        <section>
+            <h2>Listas de ejemplo</h2>
+            <ol>
+                <li>Primer paso</li>
+                <li>Segundo paso</li>
+                <li>Tercer paso</li>
+            </ol>
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+                <li>Elemento C</li>
+            </ul>
+        </section>
 
+        <!-- Tabla de datos -->
+        <section>
+            <h2>Tabla de datos</h2>
+            <table border="1">
+                <caption>Horario de clases</caption>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Asignatura</th>
+                        <th>Aula</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>Programación</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>Aplicaciones Web</td>
+                        <td>102</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Horario provisional</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Imagen con pie -->
+        <section>
+            <h2>Imagen con pie</h2>
+            <figure>
+                <img src="imagenes/logo.jpeg" alt="Logo Fett" width="120">
+                <figcaption>Ejemplo de una imagen con pie en HTML5</figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <!-- Barra lateral con enlaces -->
+    <aside>
+        <h2>Enlaces recomendados</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        </ul>
+    </aside>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Mi primera web</p>
+    </footer>
 </body>
 
 
