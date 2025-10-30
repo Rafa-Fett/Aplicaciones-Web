@@ -1,27 +1,7 @@
-/*Fuentes*/
 
-@font-face {
-    font-family: StarWars;
-    src: url(../Fuentes/STJEDISE.TTF);
-}
 
-/*Fuentes Aplicadas*/
 
-h1 {
-    font-family:"StarWars";
-}
 
-h2 {
-    font-family:"StarWars";  
-}
-
-h3 {
-    font-family:"StarWars";  
-}
-
-h4{
-    font-family:"StarWars";  
-}
 
 /*Decoracion de Fondo*/
 
@@ -29,24 +9,41 @@ body {
     background-image: url(../imagenes/Fondos/FondoGalaxia.jpg);
 }
 
-/*Estilos de Letras*/
 
-h1{
+/*Fuentes*/
+
+@font-face {
+    font-family: StarWars;
+    src: url(../Fuentes/STJEDISE.TTF);
+}
+
+
+/*Estilo de Letras*/
+
+h1 {
+    font-family:"StarWars";
+
     color: transparent;
     -webkit-text-stroke: 3px yellow;
 }
 
-h2{
+h2 {
+    font-family:"StarWars"; 
+       
     color: transparent;
     -webkit-text-stroke: 3px yellow; 
 }
 
-h3{
- color: transparent;
+h3 {
+    font-family:"StarWars";  
+
+    color: transparent;
     -webkit-text-stroke: 2px yellow;
 }
 
 h4{
+    font-family:"StarWars";  
+
     color: transparent;
     -webkit-text-stroke: 2px yellow;
 }
@@ -65,9 +62,16 @@ table {
 
 /*Posicion Imagenes Pagina inicial*/
 
-.JangoFett
+.Cazarrecompensas 
 {
-    width: 300px;
-    margin-right: 100px;
-    margin-left: 100px;
+    
+    display: flex;
+    justify-content: center; /* centralos */
+    align-items: flex-start;
+    gap: 100px; /* separación entre ellos */
+    flex-wrap: wrap; /* si la pantalla es pequeña, bajan en columna */
+    margin: 40px 0;
+    text-align: center;
 }
+
+
