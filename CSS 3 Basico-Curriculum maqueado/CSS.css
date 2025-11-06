@@ -1,0 +1,47 @@
+/* Importar fuente de Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@400&display=swap');
+
+/* Modificar el body */
+
+body {
+  background-color: #B6EEF0;
+  font-family: 'Gluten', cursive;
+  font-weight: 400;
+  font-size: 12pt;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+/* Títulos */
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24pt;
+  color: #0728F6;
+
+}
+
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 20pt;
+  color: #455CED;
+
+}
+
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+  color: #6272D6;
+}
+
+/* Texto en negrita */
+
+strong {
+  color: #455CED;
+  font-weight: bold;
+}
+
+
