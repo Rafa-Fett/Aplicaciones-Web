@@ -72,6 +72,53 @@ table {
     flex-wrap: wrap; /* si la pantalla es pequeña, bajan en columna */
     margin: 40px 0;
     text-align: center;
+
 }
 
+/*Imagenes igualadas y Bordes*/
 
+.Cazarrecompensas img
+{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 5px double yellow;
+}
+
+/*navegador*/
+
+.BaseDeDatosImperial
+{
+background-color: cadetblue;
+box-shadow: 0 0 15px rgba(0, 255, 255, 0.829);
+border: 5px solid silver;
+border-radius: 30px;
+padding: 20px;
+margin: 20px;
+width: auto;
+height: auto;
+font-family: "StarWars";
+}
+
+.BaseDeDatosImperial input
+{
+    background-color: rgb(67, 112, 114);       
+    border: solid rgb(67, 112, 114);
+    color: rgb(0, 0, 0);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: "StarWars";
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+#letales
+{
+    background-color: rgb(67, 112, 114);       
+    border: solid rgb(67, 112, 114);
+    margin-right: 230px;
+    padding: 5px 10px;
+    font-family: "StarWras";
+    width: auto;
+}
