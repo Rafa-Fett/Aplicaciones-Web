@@ -1,0 +1,61 @@
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.caja1 {
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+.caja2 {
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+.caja3 {
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.precio {
+    color: blue;
+}
+
+.anuncio {
+    border: 2px solid rgb(76, 0, 255);
+    border-radius: 10px;
+    background-color: rgb(76, 0, 255);
+    padding: 15px;
+    margin-top: 30px;
+    margin-right: 40%
+}
+
+.colorAnuncio{
+    color: white;
+}
