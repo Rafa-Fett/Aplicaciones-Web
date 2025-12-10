@@ -1,0 +1,98 @@
+
+
+/*Estructura*/
+.BloqueSuperior{
+    width: 100%;
+    overflow: auto;
+}
+
+.Imagen{
+    float: left;
+    width: 300px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.Historia{
+    float: left;
+    width: 1000px;
+    padding: 7px;
+    margin-bottom: 20px;
+    border: double yellow;
+    border-radius: 20px ;
+}
+
+.Azañas{
+    width: 350px;
+    margin-left: 5px;
+    border: 3px double yellow;
+    border-radius: 20px;
+    float: right;
+}
+
+.Arsenal{
+    width: 1000px;
+    
+}
+
+/*Decoracion de Fondo*/
+
+body {
+    background-image: url(../imagenes/Fondos/FondoGalaxia.jpg);
+}
+
+
+/*Fuentes*/
+
+@font-face {
+    font-family: StarWars;
+    src: url(../Fuentes/STJEDISE.TTF);
+}
+
+
+/*Estilo de Letras*/
+
+h1 {
+    font-family:"StarWars";
+
+    color: transparent;
+    -webkit-text-stroke: 3px yellow;
+    text-align: center;
+
+
+}
+
+h2 {
+    font-family:"StarWars"; 
+       
+    color: transparent;
+    -webkit-text-stroke: 3px yellow;
+}
+
+h3 {
+    font-family:"StarWars";  
+
+    color: transparent;
+    -webkit-text-stroke: 2px yellow;
+    text-align: center;
+}
+
+h4{
+    font-family:"StarWars";  
+
+    color: transparent;
+    -webkit-text-stroke: 2px yellow;
+}
+
+p {
+    color: white;
+}
+
+ol,ul {
+    color: white;
+}
+
+table {
+    color: white;
+}

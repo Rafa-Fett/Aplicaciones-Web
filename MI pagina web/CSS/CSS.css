@@ -2,7 +2,6 @@
 
 
 
-
 /*Decoracion de Fondo*/
 
 body {
@@ -76,7 +75,9 @@ table {
 }
 
 /*Imagenes igualadas y Bordes*/
-
+.ImagenPortada{
+    text-align: center;
+}
 .Cazarrecompensas img
 {
     width: 300px;
@@ -110,14 +111,13 @@ font-family: "StarWars";
     border-radius: 6px;
     font-family: "StarWars";
     width: 50%;
-    margin-bottom: 10px;
+    float: right;
 }
 
 #letales
 {
     background-color: rgb(67, 112, 114);       
     border: solid rgb(67, 112, 114);
-    margin-right: 230px;
     padding: 5px 10px;
     font-family: "StarWras";
     width: auto;
