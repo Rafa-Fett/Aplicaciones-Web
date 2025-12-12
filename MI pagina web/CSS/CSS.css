@@ -91,6 +91,8 @@ table {
 /*navegador*/
 
 .BaseDeDatosImperial{
+display: grid;
+grid-template-columns: 100%;
 background-color: cadetblue;
 box-shadow: 0 0 15px rgba(0, 255, 255, 0.829);
 border: 5px solid silver;
@@ -109,15 +111,17 @@ font-family: "StarWars";
     padding: 8px 12px;
     border-radius: 6px;
     font-family: "StarWars";
-    width: 50%;
-    float: right;
+    width: auto;
 }
 
-#letales
-{
-    background-color: rgb(67, 112, 114);       
-    border: solid rgb(67, 112, 114);
-    padding: 5px 10px;
-    font-family: "StarWras";
-    width: auto;
+.BaseDeDatosImperial nav{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+}
+
+.TextoPantalla{
+    text-align: center;
+    color: rgb(67, 112, 114) ;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
