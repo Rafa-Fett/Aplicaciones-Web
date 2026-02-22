@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<htmllang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de notas</h1>
+
+    <form id="formNotas" method="POST">
+    <label>
+        Nota 1:
+        <input type="number"id="nota1"min="0"max="10"step="0.1">
+    </label>
+    <br><br>
+
+    <label>
+        Nota 2:
+        <input type="number"id="nota2"min="0"max="10"step="0.1">
+    </label>
+    <br><br>
+
+    <label>
+        Nota 3:
+    <input type="number"id="nota3"min="0"max="10"step="0.1">
+    </label>
+    <br><br>
+
+    <button type="button" id="btnCalcular">Calcular nota final</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        const nota1 = document.getElementById("nota1");
+        const nota2 = document.getElementById("nota2");
+        const nota3 = document.getElementById("nota3");
+        const btnCalcular = document.getElementById("btnCalcular");
+        const resultado = document.getElementById("resultado");
+
+        btnCalcular.addEventListener("click", () => {
+            const n1 = parseFloat(nota1.value);
+            const n2 = parseFloat(nota2.value);
+            const n3 = parseFloat(nota3.value);
+
+            resultado.classList.remove("error", "suspenso", "aprobado", "notable", "sobresaliente");
+
+            if (
+                nota1.value === "" || n1 < 0 || n1 > 10 ||
+                nota2.value === "" || n2 < 0 || n2 > 10 ||
+                nota3.value === "" || n3 < 0 || n3 > 10
+            ) {
+                resultado.textContent = "Error: introduce notas válidas entre 0 y 10.";
+                resultado.classList.add("error");
+                return;
+            }
+
+            const media = (n1 + n2 + n3) / 3;
+            let nivel = "";
+
+            if (media < 5) {
+                nivel = "Suspenso";
+                resultado.classList.add("suspenso");
+            } else if (media < 7) {
+                nivel = "Aprobado";
+                resultado.classList.add("aprobado");
+            } else if (media < 9) {
+                nivel = "Notable";
+                resultado.classList.add("notable");
+            } else {
+                nivel = "Sobresaliente";
+                resultado.classList.add("sobresaliente");
+            }
+
+            resultado.textContent = `Nota media: ${media.toFixed(1)} - ${nivel}`;
+        });
+    </script>
+
+
+</body>
+</html>
+
