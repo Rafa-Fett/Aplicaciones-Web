@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios pre-examen</title>
+</head>
+
+<body>
+
+    <!-- EJERCICIO 1 -->
+    <h2>Ejercicio 1 – Validar nombre obligatorio</h2>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+    <button onclick="validarNombre()">Comprobar</button>
+    <p id="mensajeNombre"></p>
+
+
+    <!-- EJERCICIO 2 -->
+    <h2>Ejercicio 2 – Cambiar color de fondo</h2>
+    <select id="selectorColor">
+        <option value="white">Blanco</option>
+        <option value="lightblue">Azul claro</option>
+        <option value="lightgreen">Verde claro</option>
+        <option value="pink">Rosa</option>
+        <option value="yellow">Amarillo</option>
+    </select>
+    <button onclick="aplicarColor()">Aplicar color</button>
+
+
+    <!-- EJERCICIO 3 -->
+    <h2>Ejercicio 3 – Contador de caracteres</h2>
+    <textarea id="area" rows="4" cols="40" oninput="contarCaracteres()"></textarea>
+    <p id="contador">0 caracteres</p>
+
+
+    <!-- EJERCICIO 4 -->
+    <h2>Ejercicio 4 – Modo oscuro / modo claro</h2>
+    <label>
+        <input type="checkbox" id="modoOscuro" onclick="cambiarModo()">
+        Activar modo oscuro
+    </label>
+
+
+    <!-- EJERCICIO 5 -->
+    <h2>Ejercicio 5 – Validar edad</h2>
+    <input type="number" id="edad" placeholder="Introduce tu edad">
+    <button onclick="comprobarEdad()">Comprobar edad</button>
+    <p id="mensajeEdad"></p>
+
+    <script>
+
+        // EJERCICIO 1
+        function validarNombre() {
+            const nombre = document.getElementById("nombre").value;
+            const mensaje = document.getElementById("mensajeNombre");
+
+            if (nombre === "") {
+                mensaje.textContent = "El nombre es obligatorio";
+                mensaje.style.color = "red";
+            } else if (nombre.length >= 3) {
+                mensaje.textContent = "Nombre correcto";
+                mensaje.style.color = "green";
+            }
+        }
+
+        // EJERCICIO 2
+        function aplicarColor() {
+            const color = document.getElementById("selectorColor").value;
+            document.body.style.backgroundColor = color;
+        }
+
+        // EJERCICIO 3
+        function contarCaracteres() {
+            const texto = document.getElementById("area");
+            const contador = document.getElementById("contador");
+
+            const cantidad = texto.value.length;
+            contador.textContent = cantidad + " caracteres";
+
+            if (cantidad > 100) {
+                contador.style.color = "red";
+            } else {
+                contador.style.color = "black";
+            }
+        }
+
+        // EJERCICIO 4
+        function cambiarModo() {
+            const check = document.getElementById("modoOscuro");
+
+            if (check.checked) {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            } else {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }
+        }
+
+        // EJERCICIO 5
+        function comprobarEdad() {
+            const edad = parseInt(document.getElementById("edad").value);
+            const mensaje = document.getElementById("mensajeEdad");
+
+            if (isNaN(edad)) {
+                mensaje.textContent = "Introduce una edad válida";
+                mensaje.style.color = "red";
+                return;
+            }
+
+            if (edad < 18) {
+                mensaje.textContent = "No tienes acceso";
+                mensaje.style.color = "red";
+            } else {
+                mensaje.textContent = "Acceso permitido";
+                mensaje.style.color = "green";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
