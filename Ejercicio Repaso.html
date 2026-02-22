@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio Repaso</title>
+    </head>
+
+        <body>
+
+            <form id="formRegistro">
+
+                <label>Nombre:
+                    <input type="text" id="nombre">
+                </label><br>
+
+                <label>Edad:
+                    <input type="number" id="edad">
+                </label><br>
+
+                <label>Email:
+                    <input type="text" id="email">
+                </label><br>
+
+                <label>Contraseña:
+                    <input type="password" id="password">
+                </label><br>
+
+                <label>Repetir contraseña:
+                    <input type="password" id="repetirPassword">
+                </label><br>
+
+                <button type="button" onclick="validarFormulario()">Validar</button>
+
+            </form>
+
+            <div id="mensajes"></div>
+
+            <script>
+
+            function validarNombre(nombre) {
+                return nombre.trim().length >= 3;
+            }
+
+            function validarEdad(edad) {
+                return !isNaN(edad) && Number(edad) >= 18;
+            }
+
+            function validarEmail(email) {
+                const a = email.indexOf("@");
+                const p = email.lastIndexOf(".");
+                return a > -1 && p > -1 && a < p;
+            }
+
+            function validarPassword(pass) {
+                return pass.length >= 6;
+            }
+
+            function validarPasswordRepetida(pass, rep) {
+                return pass === rep;
+            }
+
+            function validarFormulario() {
+                const nombre = document.getElementById("nombre").value;
+                const edad = document.getElementById("edad").value;
+                const email = document.getElementById("email").value;
+                const pass = document.getElementById("password").value;
+                const rep = document.getElementById("repetirPassword").value;
+
+            let errores = [];
+
+                if (!validarNombre(nombre)) errores.push("Nombre inválido.");
+                if (!validarEdad(edad)) errores.push("Edad inválida.");
+                if (!validarEmail(email)) errores.push("Email inválido.");
+                if (!validarPassword(pass)) errores.push("Contraseña inválida.");
+                if (!validarPasswordRepetida(pass, rep)) errores.push("Las contraseñas no coinciden.");
+
+            const div = document.getElementById("mensajes");
+
+            if (errores.length === 0) {
+                div.innerHTML = "<p style='color:green'>Formulario válido. Registro correcto.</p>";
+            } else {
+                let html = "<p style='color:red'>Formulario NO válido</p><ul>";
+                errores.forEach(e => html += "<li>" + e + "</li>");
+                html += "</ul>";
+                div.innerHTML = html;
+            }
+            }
+
+            </script>
+
+        </body>
+</html>
